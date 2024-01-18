@@ -6,9 +6,11 @@ body a{
     text-decoration: none;
     color: black;
 }
-header{
+header.main-header{
+    max-width: 1300px;
+    margin: auto;
     display: flex;
-    min-height: 90vh;
+    min-height: 85vh;
 }
 header div.header-left{
     width: 50%;
@@ -29,4 +31,32 @@ header nav li{
 }
 header nav ul{
     padding: 0;
+}
+main{
+    max-width: calc(1300px - 80px);
+    margin: auto;
+    padding: 0 40px;
+}
+
+section header h2{
+    line-height: 6;
+}
+#bio article{
+    display: flex;
+}
+#bio article img{
+    max-width: calc(50% - 20px);
+    max-height: 350px;
+    margin-right: 50px;
+}
+#bio article div{
+    text-align: justify;
+}
+#bio article div h3{
+    margin-top: 0;
+}
+
+#work article {
+    display: inline-block;
+    padding: 20px;
 }
