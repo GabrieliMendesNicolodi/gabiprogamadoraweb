@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+body a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    min-height: 90vh;
+}
+header div.header-left{
+    width: 50%;
+    align-self: center;
+    text-align: center;
+}
+header div.header-right{
+    width: 50%;
+    background-image: url('../media/webdev.jpg');
+    background-size: 150%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+header nav li{
+    list-style: none;
+    display: inline;
+    padding: 15px;
+}
+header nav ul{
+    padding: 0;
+}
