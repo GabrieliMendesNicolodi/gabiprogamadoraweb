@@ -8,19 +8,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="plugins/owlcarousel/owl.theme.default.min.css">
     </head>
     <body>
-        <header>
+        <header class="main-header">
             <div class="header-left">
                 <h1>Gabrieli Mendes Nicolodi</h1>
                 <p>Programadora Web</p>
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#work">Projetos</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#sobre">Sobre Mim</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="#bio">Bio</a></li>
+                        <li><a href="#contact">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,12 +32,77 @@
             
         </header>
         <main>
-            <p><a href="https://www.linkedin.com/in/gabrieli-mendes-nicolodi-273870238/" target="_blank">LinkeIn Gabrieli Mendes Nicolodi</a></p>
-            <p><a href="https://wa.me/54996039059/?text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento%0D%0A" target="_blank">(54) 996039059</a></p>
-            <p><a href="mailto:gabiprogramadoraweb@gmail.com">gabiprogramadoraweb@gmail.com</a></p>
-            <p><a href="https://github.com/GabrieliMendesNicolodi" target="_blank">github.com/GabrieliMendesNicolodi</a></p>
-            <!--fazer um botão para mostrar o html, acho que vai ser legal para leigos ver como é por tras das cores e figuras bonitas-->
+            <section id="bio">
+                <header>
+                    <h2>BIO</h2>
+                </header>
+                <article>
+                    <img src="media/profile.jpg"/>
+                    <div>
+                        <h3>Formada em Analise e Desenvolvimentos de Sistemas, desenvolvedora frontend em HTML5, CSS3, js e biblioteca jQuery.</h3>
+
+                        <p>Experiência em desenvolvimento de design responsivo utilizando framework Bootstrap e CMS Wordpress.</p>
+                        
+                        <p>Programação backend em PHP, conhecimento em banco de dados relacional (MySQL).</p>
+                        
+                        <p>Experiência em gerenciamento de versões GIT.</p>
+                        
+                        <p>Conhecimento em vinculação de contas Facebook e Instagram Business com e-commerce como MercadoLivre e UOLHost. Prestação de assessoria para configuração de loja virtual neste dois canais.</p>
+                    </div>
+                    
+                </article>
+            </section>
+
+            <section id="work">
+                <header>
+                    <h2>TRABALHOS</h2>
+                </header>
+
+                <div class="owl-carousel owl-theme">
+                    <a href="#site1"><img src="media/logo-amaraldeandradeadvogados.png"></a>
+                    <a href="#site2"><img src="media/logo-arianemakeup.png"></a>
+                    <a href="#site2"><img src="media/logo-elabora.png"></a>
+                    <a href="#site3"><img src="media/logo-hospitalstaclara.png"></a>
+                    <a href="#site4"><img src="media/logo-hospitaljardins.png"></a>
+                    <a href="#site5"><img src="media/logo-hospitalsantoexpedito.png"></a>
+                    <a href="#site6"><img src="media/logo-hospitalstaana.jpeg"></a>
+                    <a href="#site7"><img src="media/logo-videofesta.png"></a>
+                    <a href="#site8"><img src="media/logo-cfp.png"></a>
+                    <a href="#site9"><img src="media/logo-casadecarnesnobres.jpg"></a>
+                    <a href="#site10"><img src="media/logo-cmcorp.png"></a>
+                    <a href="#site11"><img src="media/logo-depilmaster.png"></a>
+                    <a href="#site12"><img src="media/logo-feplam.png"></a>
+                    <a href="#site13"><img src="media/logo-hospitaldasacacias.png"></a>
+                    <a href="#site14"><img src="media/logo-santamissao.png"></a>
+                  </div>
+
+
+            </section>
+
+            <section id="contact">
+                <header>
+                    <h2>CONTATO</h2>
+                </header>
+                <article>
+                    <p><a href="https://www.linkedin.com/in/gabrieli-mendes-nicolodi-273870238/" target="_blank">LinkeIn Gabrieli Mendes Nicolodi</a></p>
+                    <p><a href="https://wa.me/54996039059/?text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento%0D%0A" target="_blank">(54) 996039059</a></p>
+                    <p><a href="mailto:gabiprogramadoraweb@gmail.com">gabiprogramadoraweb@gmail.com</a></p>
+                    <p><a href="https://github.com/GabrieliMendesNicolodi" target="_blank">github.com/GabrieliMendesNicolodi</a></p>
+                    <!--fazer um botão para mostrar o html, acho que vai ser legal para leigos ver como é por tras das cores e figuras bonitas-->
+                </article>
+            </section>
         </main>
+
+        <footer>
+            <script src="js/jquery.min.js"></script>
+            <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $(".owl-carousel").owlCarousel();
+                });
+            </script>
+            <script src="js/customjs.js"></script>
+        </footer>
     </body>
 
 </html>
