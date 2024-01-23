@@ -153,8 +153,8 @@ function openModalWork(work){
     }
 
     if(work == "videofesta"){
-        title = 'Hospital VideoFesta';
-        body = '<p>Website institucional VideoFesta, especialida em organização de eventos, aluguel de equipamentos, DJs, Som e Bartender.</p>';
+        title = 'VideoFesta';
+        body = '<p>Website institucional VideoFesta, especialista em organização de eventos, aluguel de equipamentos, DJs, Som e Bartender.</p>';
         body += '<p><a href="http://hospitalsantoexpedito.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
         body += `<p>Informações técnicas:</p>
                 <ul>
