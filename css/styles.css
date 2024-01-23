@@ -6,6 +6,16 @@ body a{
     text-decoration: none;
     color: black;
 }
+button#goToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    padding: 5px 6px 0 6px;
+}
+button#goToTop:focus {
+    outline-style: none;
+}
 header.main-header{
     margin: auto;
     display: flex;
@@ -16,10 +26,14 @@ header div.header-left{
     align-self: center;
     text-align: center;
 }
+header div.header-left img{
+    width: inherit;
+    padding-bottom: 40px;
+}
 header div.header-right{
     width: 50%;
     background-image: url('../media/webdev.jpg');
-    background-size: 150%;
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
@@ -58,6 +72,9 @@ section header h2{
 #work article {
     display: inline-block;
     padding: 20px;
+}
+#work img:hover {
+    cursor: pointer;
 }
 
 /* modal work*/
