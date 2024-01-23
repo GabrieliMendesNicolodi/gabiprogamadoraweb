@@ -102,6 +102,66 @@ function openModalWork(work){
                     <li>Inserção de usuários com privilégios administrativo por setor</li>
                 </ul>`;
     }
+
+    if(work == "hospitalstaclara"){
+        title = 'Hospital Privado Santa Clara';
+        body = '<p>Website institucional Hospital Santa Clara, São Paulo.</p>';
+        body += '<p>Os pacientes podem consultar serviços disponíveis, agendamento de consultas, exames e muito mais de forma rápida.</p>';
+        body += '<p><a href="http://hospitalstaclara.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
+        body += `<p>Informações técnicas:</p>
+                <ul>
+                    <li>Construído com template HTML.</li>
+                    <li>Formularios de contato utilizando tecnologia PHP para envio de emails.</li>
+                    <li>Link para as redes sociais e Whatsapp</li>
+                </ul>`;
+    }
+
+    if(work == "hospitaljardins"){
+        title = 'Hospital Jardins';
+        body = '<p>Website institucional Hospital Jardins, São Paulo.</p>';
+        body += '<p>Informações sobre a instituição, contato e envio de currículo.</p>';
+        body += '<p><a href="http://www.hospitaljardins.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
+        body += `<p>Informações técnicas:</p>
+                <ul>
+                    <li>Construído com template HTML.</li>
+                    <li>Formularios de contato utilizando tecnologia PHP para envio de emails.</li>
+                </ul>`;
+    }
+
+    if(work == "hospitalsantoexpedito"){
+        title = 'Hospital Santo Expedito';
+        body = '<p>Website institucional Hospital Santo Expedito, São Paulo.</p>';
+        body += '<p>Informações sobre a instituição, contato e envio de currículo.</p>';
+        body += '<p><a href="http://hospitalsantoexpedito.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
+        body += `<p>Informações técnicas:</p>
+                <ul>
+                    <li>Construído com template HTML.</li>
+                    <li>Formularios de contato utilizando tecnologia PHP para envio de emails.</li>
+                </ul>`;
+    }
+
+    if(work == "hospitalstaana"){
+        title = 'Hospital Santa Ana';
+        body = '<p>Website institucional Hospital Santo Expedito, São Paulo.</p>';
+        body += '<p>Informações sobre a instituição, contato e envio de currículo.</p>';
+        body += '<p><a href="http://hospitalsantoexpedito.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
+        body += `<p>Informações técnicas:</p>
+                <ul>
+                    <li>Construído com template HTML.</li>
+                    <li>Formularios de contato utilizando tecnologia PHP para envio de emails.</li>
+                </ul>`;
+    }
+
+    if(work == "videofesta"){
+        title = 'Hospital VideoFesta';
+        body = '<p>Website institucional VideoFesta, especialida em organização de eventos, aluguel de equipamentos, DJs, Som e Bartender.</p>';
+        body += '<p><a href="http://hospitalsantoexpedito.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
+        body += `<p>Informações técnicas:</p>
+                <ul>
+                    <li>Construído Wordpress</li>
+                    <li>Cliente tem possibilidade de visualizar a lista de musicas de cada Karaok~e disponivel para alguel, antes da locação dentro do ambiente do site a qualquer momento.</li>
+                </ul>`;
+    }
     
     html =`<div class="modal-header">
         <h5 class="modal-title">`+title+`</h5>
