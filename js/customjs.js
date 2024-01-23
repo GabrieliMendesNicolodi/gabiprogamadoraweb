@@ -27,6 +27,16 @@ $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
 
+/** GO TO TOP */
+function scrollToTop() {
+    $("html").animate({ scrollTop: "0"}, 1500);
+}
+
+/** GO TO SECTION */
+function scrollToSection(toSectionName){
+    $("html").animate({ scrollTop: $("#"+toSectionName).offset().top}, 1500);
+}
+
 /** OPEN AN MODAL DIALOG */
 
 function openModalWork(work){
