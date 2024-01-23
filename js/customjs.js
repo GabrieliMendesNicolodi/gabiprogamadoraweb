@@ -51,7 +51,7 @@ function openModalWork(work){
         title = 'Website Amaral de Andrade e Pinheiro Lima';
         body = '<p>Website institucional para firma de advogados em São Paulo.</p>';
         body += '<p><a href="https://amaraldeandrade.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
-        body += `<p>Detalhes tecnicos:</p>
+        body += `<p>Detalhes técnicos:</p>
                 <ul>
                     <li>Wordpress 100%</li>
                     <li>Template customisável</li>
@@ -81,6 +81,28 @@ function openModalWork(work){
                 </ul>`;
                 /**TODO: por uma galeria com as imagens do app */
     }
+
+    if(work == "elabora"){
+        title = 'Plataforma eLabora';
+        body = '<p>Uma plataforma completa para estudantes, professores e escolas.</p>';
+        body += '<p>Geração de simulados de todas as áreas de estudo e de todos os níveis.</p>';
+        body += '<p><a href="https://www.sistemaelabora.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
+        body += `<p>Painel para estudantes, professores e escolas:</p>
+                <ul>
+                    <li>Busca de questões por disciplina, ano, instituição aplicadora, nível de dificuldade.</li>
+                    <li>Geração de simulado individual ou em grupo, com cronômetro e gabarito</li>
+                    <li>Questões dissertativas, multipla escolha, verdadeiro ou falso.</li>
+                    <li>Correção por especialistas</li>
+                </ul>
+                <p>Painel administrativo:</p>
+                <ul>
+                    <li>Inserção de questões</li>
+                    <li>Configuração de valores de crédito</li>
+                    <li>Lista de solicitações de lista de exercícios à corrigir</li>
+                    <li>Inserção de usuários com privilégios administrativo por setor</li>
+                </ul>`;
+    }
+    
     html =`<div class="modal-header">
         <h5 class="modal-title">`+title+`</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">

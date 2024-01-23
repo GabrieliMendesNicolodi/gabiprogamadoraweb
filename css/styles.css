@@ -45,6 +45,11 @@ header nav li{
 header nav ul{
     padding: 0;
 }
+nav a.nav-link:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
 main{
     max-width: calc(1300px - 80px);
     margin: auto;
