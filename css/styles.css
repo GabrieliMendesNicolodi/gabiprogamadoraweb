@@ -6,8 +6,17 @@ body a{
     text-decoration: none;
     color: black;
 }
+button#goToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 2;
+    padding: 5px 6px 0 6px;
+}
+button#goToTop:focus {
+    outline-style: none;
+}
 header.main-header{
-    max-width: 1300px;
     margin: auto;
     display: flex;
     min-height: 85vh;
@@ -17,10 +26,14 @@ header div.header-left{
     align-self: center;
     text-align: center;
 }
+header div.header-left img{
+    width: inherit;
+    padding-bottom: 40px;
+}
 header div.header-right{
     width: 50%;
     background-image: url('../media/webdev.jpg');
-    background-size: 150%;
+    background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
@@ -31,6 +44,11 @@ header nav li{
 }
 header nav ul{
     padding: 0;
+}
+nav a.nav-link:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
 }
 main{
     max-width: calc(1300px - 80px);
@@ -59,4 +77,16 @@ section header h2{
 #work article {
     display: inline-block;
     padding: 20px;
+}
+#work img:hover {
+    cursor: pointer;
+}
+
+/* modal work*/
+.modal-body a {
+    color: darkblue;
+    text-decoration-line: underline;
+}
+.modal-body span.material-symbols-outlined {
+    font-size: 18px;
 }

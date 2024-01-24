@@ -3,32 +3,32 @@
     <head>
         <title>Gabi Programadora Web</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="media/icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" type="text/css" href="css/styles.css"/>
         <link rel="stylesheet" href="plugins/owlcarousel/owl.carousel.min.css">
         <link rel="stylesheet" href="plugins/owlcarousel/owl.theme.default.min.css">
     </head>
     <body>
+        <button id="goToTop" onclick="scrollToTop()"><span class="material-symbols-outlined">arrow_upward</span></button>
         <header class="main-header">
             <div class="header-left">
-                <h1>Gabrieli Mendes Nicolodi</h1>
-                <p>Programadora Web</p>
+                <img src="media/logo1.png">
+                <!--<h1>Gabrieli Mendes Nicolodi</h1>
+                <p>Programadora Web</p>-->
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#work">Projetos</a></li>
+                        <li><a href="#" onclick="scrollToTop()">Home</a></li>
+                        <li><a href="#" onclick="scrollToSection('work')">Projetos</a></li>
                         <li><a href="blog.html">Blog</a></li>
-<<<<<<< Updated upstream
-                        <li><a href="#bio">Bio</a></li>
-                        <li><a href="#contact">Contato</a></li>
-=======
                         <li><a href="#" onclick="scrollToSection('bio')">Bio</a></li>
                         <li><a href="#" onclick="scrollToSection('contact')">Contato</a></li>
                         <!--<li><a href="#" onclick="scrollToSection('eastereggs')" id="eastereggs"><span id="excitedFace" class="material-symbols-outlined">sentiment_excited</span><span id="satisfiedFace" class="material-symbols-outlined">sentiment_satisfied</span></a></li>-->
->>>>>>> Stashed changes
                     </ul>
                 </nav>
             </div>
@@ -45,15 +45,16 @@
                 <article>
                     <img src="media/profile.jpg"/>
                     <div>
-                        <h3>Formada em Analise e Desenvolvimentos de Sistemas, desenvolvedora frontend em HTML5, CSS3, js e biblioteca jQuery.</h3>
+                        <h3>Formada em Analise e Desenvolvimentos de Sistemas</h3>
 
+                        <p>Desenvolvedora frontend em HTML5, CSS3, js e biblioteca jQuery.</p>
+                        
                         <p>Experiência em desenvolvimento de design responsivo utilizando framework Bootstrap e CMS Wordpress.</p>
                         
                         <p>Programação backend em PHP, conhecimento em banco de dados relacional (MySQL).</p>
                         
                         <p>Experiência em gerenciamento de versões GIT.</p>
                         
-                        <p>Conhecimento em vinculação de contas Facebook e Instagram Business com e-commerce como MercadoLivre e UOLHost. Prestação de assessoria para configuração de loja virtual neste dois canais.</p>
                     </div>
                     
                 </article>
@@ -65,16 +66,16 @@
                 </header>
 
                 <div class="owl-carousel owl-theme">
-                    <a href="#site1"><img src="media/logo-amaraldeandradeadvogados.png"></a>
-                    <a href="#site2"><img src="media/logo-arianemakeup.png"></a>
-                    <a href="#site2"><img src="media/logo-elabora.png"></a>
-                    <a href="#site3"><img src="media/logo-hospitalstaclara.png"></a>
-                    <a href="#site4"><img src="media/logo-hospitaljardins.png"></a>
-                    <a href="#site5"><img src="media/logo-hospitalsantoexpedito.png"></a>
-                    <a href="#site6"><img src="media/logo-hospitalstaana.jpeg"></a>
-                    <a href="#site7"><img src="media/logo-videofesta.png"></a>
+                    <a data-toggle="modal" onclick="openModalWork('amaraldeandradeadvogados')"><img src="media/logo-amaraldeandradeadvogados.png"></a>
+                    <a data-toggle="modal" onclick="openModalWork('arianemakeup')"><img src="media/logo-arianemakeup.png"></a>
+                    <a data-toggle="modal" onclick="openModalWork('elabora')"><img src="media/logo-elabora.png"></a>
+                    <a data-toggle="modal" onclick="openModalWork('hospitalstaclara')"><img src="media/logo-hospitalstaclara.png"></a>
+                    <a data-toggle="modal" onclick="openModalWork('hospitaljardins')"><img src="media/logo-hospitaljardins.png"></a>
+                    <a data-toggle="modal" onclick="openModalWork('hospitalsantoexpedito')"><img src="media/logo-hospitalsantoexpedito.png"></a>
+                    <a data-toggle="modal" onclick="openModalWork('hospitalstaana')"><img src="media/logo-hospitalstaana.png"></a>
+                    <a data-toggle="modal" onclick="openModalWork('videofesta')"><img src="media/logo-videofesta.png"></a>
                     <a href="#site8"><img src="media/logo-cfp.png"></a>
-                    <a href="#site9"><img src="media/logo-casadecarnesnobres.jpg"></a>
+                    <a href="#site9"><img src="media/logo-casadecarnesnobres.png"></a>
                     <a href="#site10"><img src="media/logo-cmcorp.png"></a>
                     <a href="#site11"><img src="media/logo-depilmaster.png"></a>
                     <a href="#site12"><img src="media/logo-feplam.png"></a>
@@ -82,6 +83,13 @@
                     <a href="#site14"><img src="media/logo-santamissao.png"></a>
                   </div>
 
+                  <!-- Large modal -->
+                    <div class="modal fade bd-example-modal-lg modal-work" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                        ...
+                        </div>
+                    </div>
 
             </section>
 
@@ -97,16 +105,13 @@
                     <!--fazer um botão para mostrar o html, acho que vai ser legal para leigos ver como é por tras das cores e figuras bonitas-->
                 </article>
             </section>
-<<<<<<< Updated upstream
-=======
-
             <!--<section id="eastereggs">Para carregar essa página foram necessários quase 400 linhas de código e 30 horas de programação, por enquanto! Mas há muito a se fazer ainda <span class="material-symbols-outlined">sentiment_excited</span></section>-->
->>>>>>> Stashed changes
         </main>
 
         <footer>
             <script src="js/jquery.min.js"></script>
             <script src="plugins/owlcarousel/owl.carousel.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
             <script>
                 $(document).ready(function(){
                     $(".owl-carousel").owlCarousel();
