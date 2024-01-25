@@ -6,7 +6,13 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
+if(isset($_POST['enviar'])){
+
 $mail = new PHPMailer(true);
+
+$contact_name = $_POST['name'];
+$contact_mail = $_POST['email'];
+$contact_msg = $_POST['msg'];
 
 try {
     $mail->SMTPDebug = SMTP::DEBUG_SERVER;
@@ -19,20 +25,24 @@ try {
     $mail->Port       = 465;
 
     //Recipients
-    $mail->setFrom('gabiprogramadoraweb@gmail.com', 'Mailer');
-    $mail->addAddress('gabiprogramadoraweb@gmail.com', 'Joe User');
-    $mail->addReplyTo('info@example.com', 'Information');
-    $mail->addCC('cc@example.com');
-    $mail->addBCC('bcc@example.com');
+    $mail->setFrom('gabiprogramadoraweb@gmail.com', 'Website');
+    $mail->addAddress('gabiprogramadoraweb@gmail.com', $contact_name);
+    //$mail->addReplyTo('info@example.com', 'Information');
+    $mail->addCC($contact_mail);
+    //$mail->addBCC('bcc@example.com');
 
     //Content
     $mail->isHTML(true);
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    $mail->Subject = 'Contato';
+    $mail->Body    = $contact_msg;
+    //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+
+}else{
+    //caso não tenha preenchido os campos necessários ou não clicando no botão enviar
 }
