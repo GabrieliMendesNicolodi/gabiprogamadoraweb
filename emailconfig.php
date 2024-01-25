@@ -6,16 +6,17 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
+
 if(isset($_POST['enviar'])){
 
 $mail = new PHPMailer(true);
 
-$contact_name = $_POST['name'];
+$contact_name = $_POST['nome'];
 $contact_mail = $_POST['email'];
 $contact_msg = $_POST['msg'];
 
 try {
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
@@ -33,16 +34,16 @@ try {
 
     //Content
     $mail->isHTML(true);
-    $mail->Subject = 'Contato';
+    $mail->Subject = 'Contato Website Gabi Programadora Web';
     $mail->Body    = $contact_msg;
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
+    echo 'Seu email foi enviado com sucesso! <a href="https://gabrielimendesnicolodi.github.io/gabiprogamadoraweb/">Voltar ao site</a>';
 } catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    echo "Sua mensagem não pode ser enviada! Error: {$mail->ErrorInfo}";
 }
 
 }else{
-    //caso não tenha preenchido os campos necessários ou não clicando no botão enviar
+    echo 'Sua mensagem não pode ser enviada. <a href="https://gabrielimendesnicolodi.github.io/gabiprogamadoraweb/">Voltar ao site</a>';
 }
