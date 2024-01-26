@@ -89,4 +89,30 @@ section header h2{
 }
 .modal-body span.material-symbols-outlined {
     font-size: 18px;
+<<<<<<< Updated upstream
+=======
+}
+section#contact {
+    padding-bottom: 80px;
+}
+#contact article{
+    width: 50%;
+    float: left;
+}
+#contact form {
+    width: 50%;
+    display: inline-block;
+}
+#contact form input,
+#contact form textarea {
+    width: 100%;
+}
+/* FOOTER */
+footer{
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    color: white;
+    left: 0;
+>>>>>>> Stashed changes
 }
