@@ -97,13 +97,29 @@ section#contact {
     width: 50%;
     float: left;
 }
+#contact img.social-icon {
+    width: 22px;
+    margin-right: 10px;
+}
+
 #contact form {
     width: 50%;
     display: inline-block;
+    margin-top: -10px;
 }
 #contact form input,
 #contact form textarea {
     width: 100%;
+    border: none;
+    background-color: #f2f2f2;
+    color: #495057;
+    padding: 5px;
+    margin-top: 10px;
+}
+#contact form input.btn-submit {
+    max-width: 100px;
+    cursor: pointer;
+    border: #6c757d 1px solid;
 }
 /* FOOTER */
 footer{
