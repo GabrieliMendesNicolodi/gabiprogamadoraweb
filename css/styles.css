@@ -90,3 +90,11 @@ section header h2{
 .modal-body span.material-symbols-outlined {
     font-size: 18px;
 }
+/* FOOTER */
+footer{
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    color: white;
+    left: 0;
+}
