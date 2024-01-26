@@ -5,7 +5,7 @@ owl.owlCarousel({
     center: true,
     loop:true,
     margin:20,
-    autoplay:false,
+    autoplay:true,
     autoplayTimeout:1500,
     autoplayHoverPause:true,
     responsive:{
@@ -155,11 +155,11 @@ function openModalWork(work){
     if(work == "videofesta"){
         title = 'VideoFesta';
         body = '<p>Website institucional VideoFesta, especialista em organização de eventos, aluguel de equipamentos, DJs, Som e Bartender.</p>';
-        body += '<p><a href="http://hospitalsantoexpedito.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
+        body += '<p><a href="https://videofesta.com.br/" target="_blank">Acesse o site e conheça <span class="material-symbols-outlined">open_in_new</span></a></p>';
         body += `<p>Informações técnicas:</p>
                 <ul>
                     <li>Construído Wordpress</li>
-                    <li>Cliente tem possibilidade de visualizar a lista de musicas de cada Karaok~e disponivel para alguel, antes da locação dentro do ambiente do site a qualquer momento.</li>
+                    <li>Cliente tem possibilidade de visualizar a lista de músicas de cada Karaokê disponível para aluguel antes da locação, dentro do ambiente do site a qualquer momento.</li>
                 </ul>`;
     }
     
