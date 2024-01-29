@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html class="container-fluid">
     <head>
         <title>Gabi Programadora Web</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=1024, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="media/icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,24 +17,30 @@
     <body>
         <button id="goToTop" onclick="scrollToTop()"><span class="material-symbols-outlined">arrow_upward</span></button>
         <header class="main-header">
-            <div class="header-left">
-                <img src="media/logo1.png">
-                <!--<h1>Gabrieli Mendes Nicolodi</h1>
-                <p>Programadora Web</p>-->
-                <nav>
-                    <ul>
-                        <li><a href="#" onclick="scrollToTop()">Home</a></li>
-                        <li><a href="#" onclick="scrollToSection('work')">Projetos</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="#" onclick="scrollToSection('bio')">Bio</a></li>
-                        <li><a href="#" onclick="scrollToSection('contact')">Contato</a></li>
-                        <!--<li><a href="#" onclick="scrollToSection('eastereggs')" id="eastereggs"><span id="excitedFace" class="material-symbols-outlined">sentiment_excited</span><span id="satisfiedFace" class="material-symbols-outlined">sentiment_satisfied</span></a></li>-->
-                    </ul>
-                </nav>
-            </div>
-            <div class="header-right">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6 header-left">
+                        <img src="media/logo1.png">
+                        <!--<h1>Gabrieli Mendes Nicolodi</h1>
+                        <p>Programadora Web</p>-->
+                        <nav class="navbar">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToTop()">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToSection('work')">Projetos</a></li>
+                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToSection('bio')">Bio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="#" onclick="scrollToSection('contact')">Contato</a></li>
+                                <!--<li><a href="#" onclick="scrollToSection('eastereggs')" id="eastereggs"><span id="excitedFace" class="material-symbols-outlined">sentiment_excited</span><span id="satisfiedFace" class="material-symbols-outlined">sentiment_satisfied</span></a></li>-->
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-12 col-md-6 header-right">
 
+                    </div>
+                </div>
             </div>
+            
+
             
         </header>
         <main>
