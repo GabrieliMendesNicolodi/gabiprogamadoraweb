@@ -1,5 +1,4 @@
 body{
-    /*margin:0;*/
     font-family: 'Poppins', sans-serif;
 }
 body a{
@@ -16,25 +15,24 @@ button#goToTop {
 button#goToTop:focus {
     outline-style: none;
 }
-header div.header-right{
-    /*display: none;*/
-}
 header div.header-left {
-    /*width: 100%;
-    align-self: center;
-    text-align: center;*/
-    background-image: url(../media/webdev.jpg);
+    background-image: url(../media/webdev-dark.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 90vh;
+}
+header div.header-left img.logo-invert{
+    display: block;
+}
+header div.header-left img.logo{
+    display: none;
 }
 header div.header-left img{
     margin-top: 30vh;
     width: 85vw;
     margin-right: auto;
     margin-left: auto;
-    display: block;
 }
 header nav a{
     color: white;
@@ -136,7 +134,12 @@ footer a.btn-talk-to-me{
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    
+    header div.header-left img.logo-invert{
+        display: none;
+    }
+    header div.header-left img.logo{
+        display: block;
+    }
     header.main-header{
         min-height: 85vh;
     }
@@ -144,7 +147,6 @@ footer a.btn-talk-to-me{
         background: none;
     }
     header div.header-right{
-        /*width: 50%;*/
         background-image: url('../media/webdev.jpg');
         background-size: cover;
         background-position: center bottom;
