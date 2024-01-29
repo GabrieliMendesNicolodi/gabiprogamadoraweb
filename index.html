@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="container-fluid">
+<html>
     <head>
         <title>Gabi Programadora Web</title>
         <meta charset="UTF-8">
@@ -19,8 +19,8 @@
         <header class="main-header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-xs-12 col-md-6 header-left">
-                        <img src="media/logo1.png">
+                    <div class="col-xs-12 col-md-6 header-left pb-5">
+                        <img class="pb-5" src="media/logo1.png">
                         <!--<h1>Gabrieli Mendes Nicolodi</h1>
                         <p>Programadora Web</p>-->
                         <nav class="navbar">
@@ -43,24 +43,28 @@
 
             
         </header>
-        <main>
+        <main class="pr-2 pl-2">
             <section id="bio">
                 <header>
                     <h2>BIO</h2>
                 </header>
                 <article>
-                    <img src="media/profile.jpg"/>
-                    <div>
-                        <h3>Formada em Analise e Desenvolvimentos de Sistemas</h3>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 profile-img">
+                            </div>
+                            <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9">
+                                <h3>Formada em Analise e Desenvolvimentos de Sistemas</h3>
 
-                        <p>Desenvolvedora frontend em HTML5, CSS3, js e biblioteca jQuery.</p>
-                        
-                        <p>Experiência em desenvolvimento de design responsivo utilizando framework Bootstrap e CMS Wordpress.</p>
-                        
-                        <p>Programação backend em PHP, conhecimento em banco de dados relacional (MySQL).</p>
-                        
-                        <p>Experiência em gerenciamento de versões GIT.</p>
-                        
+                                <p>Desenvolvedora frontend em HTML5, CSS3, js e biblioteca jQuery.</p>
+                                
+                                <p>Experiência em desenvolvimento de design responsivo utilizando framework Bootstrap e CMS Wordpress.</p>
+                                
+                                <p>Programação backend em PHP, conhecimento em banco de dados relacional (MySQL).</p>
+                                
+                                <p>Experiência em gerenciamento de versões GIT.</p>
+                            </div>
+                        </div>
                     </div>
                     
                 </article>
@@ -104,25 +108,35 @@
                     <h2>CONTATO</h2>
                 </header>
                 <article>
-                    <p><img class="social-icon" src="media/linkedin_icon.png"><a href="https://www.linkedin.com/in/gabrieli-mendes-nicolodi-273870238/" target="_blank">Gabrieli Mendes Nicolodi</a></p>
-                    <p><img class="social-icon" src="media/whatsapp_icon.png"><a href="https://wa.me/54996039059/?text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento%0D%0A" target="_blank">(54) 996039059</a></p>
-                    <p><img class="social-icon" src="media/email_icon.png"><a href="mailto:gabiprogramadoraweb@gmail.com">gabiprogramadoraweb@gmail.com</a></p>
-                    <p><img class="social-icon" src="media/github_icon.png"><a href="https://github.com/GabrieliMendesNicolodi" target="_blank">github.com/GabrieliMendesNicolodi</a></p>
-                    <!--fazer um botão para mostrar o html, acho que vai ser legal para leigos ver como é por tras das cores e figuras bonitas-->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6 mb-5">
+                                <p><img class="social-icon" src="media/linkedin_icon.png"><a href="https://www.linkedin.com/in/gabrieli-mendes-nicolodi-273870238/" target="_blank">Gabrieli Mendes Nicolodi</a></p>
+                                <p><img class="social-icon" src="media/whatsapp_icon.png"><a href="https://wa.me/54996039059/?text=Ol%C3%A1%20gostaria%20de%20fazer%20um%20or%C3%A7amento%0D%0A" target="_blank">(54) 996039059</a></p>
+                                <p><img class="social-icon" src="media/email_icon.png"><a href="mailto:gabiprogramadoraweb@gmail.com">gabiprogramadoraweb@gmail.com</a></p>
+                                <p><img class="social-icon" src="media/github_icon.png"><a href="https://github.com/GabrieliMendesNicolodi" target="_blank">github.com/GabrieliMendesNicolodi</a></p>
+                                <!--fazer um botão para mostrar o html, acho que vai ser legal para leigos ver como é por tras das cores e figuras bonitas-->
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <form id="contactForm" action="emailconfig.php" method="POST">
+                                    <h4>Envie uma mensagem</h4>
+                                    <div>
+                                        <input type="text" name="nome" placeholder="Nome" required>
+                                    </div>
+                                    <div>
+                                        <input type="email" name="email" placeholder="E-mail" required>
+                                    </div>
+                                    <div>
+                                        <textarea name="msg" placeholder="Sua mensagem..." required></textarea>
+                                    </div>
+                                    <input class="btn-submit" type="submit" name="enviar">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </article>
-                <form id="contactForm" action="emailconfig.php" method="POST">
-                    <h4>Envie uma mensagem</h4>
-                    <div>
-                        <input type="text" name="nome" placeholder="Nome" required>
-                    </div>
-                    <div>
-                        <input type="email" name="email" placeholder="E-mail" required>
-                    </div>
-                    <div>
-                        <textarea name="msg" placeholder="Sua mensagem..." required></textarea>
-                    </div>
-                    <input class="btn-submit" type="submit" name="enviar">
-                </form>
+                
             </section>
             <!--<section id="eastereggs">Para carregar essa página foram necessários quase 400 linhas de código e 30 horas de programação, por enquanto! Mas há muito a se fazer ainda <span class="material-symbols-outlined">sentiment_excited</span></section>-->
         </main>
@@ -130,7 +144,7 @@
         <footer>
             <div class="container">
                 <div class="row pt-5 pb-5">
-                    <div class="col-4">
+                    <div class="col-xs-12 col-md-4 mb-5">
                         <h4 class="mb-4">MENU</h4>
                         <li><a href="#" onclick="scrollToTop()">Home</a></li>
                         <li><a href="#" onclick="scrollToSection('work')">Projetos</a></li>
@@ -138,7 +152,7 @@
                         <li><a href="#" onclick="scrollToSection('bio')">Bio</a></li>
                         <li><a href="#" onclick="scrollToSection('contact')">Contato</a></li>
                     </div>
-                    <div class="col-8">
+                    <div class="col-xs-12 col-md-8">
                         <h4 class="mb-4">ASSISTÊNCIA TÉCNICA</h4>
                         <li>Precisa de ajuda com Word ou Excel, formatar um trabalho ou criar uma planilha?</li>
                         <li>Precisa de ajuda para recuperação senha de conta local o Windows?</li>

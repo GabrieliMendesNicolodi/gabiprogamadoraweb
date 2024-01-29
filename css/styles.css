@@ -31,41 +31,29 @@ header div.header-left {
 }
 header div.header-left img{
     margin-top: 30vh;
-    width: 100%;
+    width: 85vw;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
 }
 header nav a{
     color: white;
 }
-header nav li{
-    /*list-style: none;
-    display: inline;
-    padding: 15px;*/
+header nav{
+    justify-content: center !important;
 }
-header nav ul{
-   /* padding: 0;*/
-}
+
 nav a.nav-link:hover {
     cursor: pointer;
     color: blue;
     text-decoration: underline;
 }
-main{
-    /*max-width: calc(1300px - 80px);
-    margin: auto;
-    padding: 0 40px;*/
-}
-
 section header h2{
     line-height: 6;
 }
-#bio article{
-    /*display: flex;*/
-}
-#bio article img{
-    /*max-width: calc(50% - 20px);*/
-    max-height: 350px;
-    margin-right: 50px;
-    filter: brightness(0.7) contrast(1.2) saturate(1.4);
+
+#bio article .profile-img{
+    display: none;
 }
 #bio article div{
     text-align: justify;
@@ -74,10 +62,6 @@ section header h2{
     margin-top: 0;
 }
 
-#work article {
-    /*display: inline-block;
-    padding: 20px;*/
-}
 #work img:hover {
     cursor: pointer;
 }
@@ -93,20 +77,12 @@ section header h2{
 section#contact {
     padding-bottom: 80px;
 }
-#contact article{
-    /*width: 50%;
-    float: left;*/
-}
+
 #contact img.social-icon {
     width: 22px;
     margin-right: 10px;
 }
 
-#contact form {
-    /*width: 50%;
-    display: inline-block;
-    margin-top: -10px;*/
-}
 #contact form input,
 #contact form textarea {
     width: 100%;
@@ -147,25 +123,25 @@ footer a.btn-talk-to-me{
 /* FOR MOBILE */
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-
+    #bio article .profile-img{
+        background-image: url(../media/profile.jpg);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        filter: brightness(0.7) contrast(1.2) saturate(1.4);
+        min-height: 400px;
+        display: block;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     
     header.main-header{
-        /*margin: auto;
-        display: flex;*/
         min-height: 85vh;
     }
-    header div.header-left{
-        /*width: 50%;
-        align-self: center;
-        text-align: center;*/
-    }
-    header div.header-left img{
-        /*width: inherit;
-        padding-bottom: 40px;*/
+    header div.header-left {
+        background: none;
     }
     header div.header-right{
         /*width: 50%;*/
@@ -175,6 +151,13 @@ footer a.btn-talk-to-me{
         background-repeat: no-repeat;
         min-height: 85vh;
     }
+    header div.header-left img {
+        max-width: inherit;
+    }
+    nav.navbar a {
+        color: black;
+    }
+    
 }
 
 /*Large devices (desktops, 992px and up)*/
