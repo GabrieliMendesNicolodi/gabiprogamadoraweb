@@ -119,8 +119,10 @@ footer a.btn-talk-to-me{
 }
 
 /* FOR MOBILE */
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+    
     #bio article .profile-img{
         background-image: url(../media/profile.jpg);
         background-position: top center;
@@ -132,8 +134,22 @@ footer a.btn-talk-to-me{
     }
 }
 
+/*Small and medium devices (768px and down)*/
+@media (max-width: 768px){
+    section header h2{
+        padding-left: 15px;
+    }
+    section#work .owl-carousel{
+        padding: 0 15px 0 15px;
+    }
+}
+
 /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+    main {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
     header div.header-left img.logo-invert{
         display: none;
     }
