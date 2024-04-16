@@ -21,7 +21,7 @@ try {
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
     $mail->Username   = 'gabiprogramadoraweb@gmail.com';
-    $mail->Password = 'vudteksgnrvhzjpw';
+    $mail->Password = '${{secrets.GOOGLE_MAIL}}';
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
