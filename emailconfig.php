@@ -16,7 +16,7 @@ $contact_mail = $_POST['email'];
 $contact_msg = $_POST['msg'];
 
 try {
-    //$mail->SMTPDebug = SMTP::DEBUG_SERVER;
+    $mail->SMTPDebug = SMTP::DEBUG_SERVER;
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
