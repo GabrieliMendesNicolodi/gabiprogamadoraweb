@@ -1,6 +1,8 @@
 
 # Olá, sou Gabrieli Mendes Nicolodi 👋
 
+<img src="https://gabrielimendesnicolodi.github.io/gabiprogamadoraweb/media/profile.jpg" alt="Imagem de Perfil" width="150" display=fex>
+
 ## Sobre mim
 
 - :woman_student: Formada em Analise e Desenvolvimento de Sistemas.
