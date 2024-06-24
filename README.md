@@ -1,6 +1,8 @@
 
 # Olá, sou Gabrieli Mendes Nicolodi 👋
 
+<img src="https://gabrielimendesnicolodi.github.io/gabiprogamadoraweb/media/profile.jpg" alt="Imagem de Perfil" width="150">
+
 ## Sobre mim
 
 - :woman_student: Formada em Analise e Desenvolvimento de Sistemas.
@@ -14,8 +16,8 @@
 ## Tecnologias
 
 - 💻 Linguagens de programação: PHP, JavaScript.
-- 🌐 Front-end: HTML, CSS, JavaScript, Bibliotecas jQuery e Bootstrap.
+- 🌐 Front-end: HTML, CSS, JavaScript, estudando React.js.
 - 🖥️ Back-end: PHP, JavaScript.
 - 🗃️ Banco de dados: MySQL.
 - 🧰 Ferramentas de Desenvolvimento: Visual Studio Code, Git, PHPStorm.
-- 🌍 Outras: Wordpress, Filezilla, Laragon e Xampp.
+- 🌍 Outras: Wordpress
